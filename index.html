@@ -7,12 +7,15 @@
     <!-- link to style.css -->
     <link rel="stylesheet" href="./css/style.css" />
     <!-- link to script.js - make sure to defer -->
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <!-- nav element goes here -->
     <nav>
       <a href="./index.html"><img src="./images/logo.jpg" alt="Logo" /></a>
-      <ul>
+      <img id="hamburger" src="./icons/menu.svg" alt="Menu" />
+      <div id="overlay"></div>
+      <ul id="menu">
         <li><a href="#issues">Issues</a></li>
         <li><a href="#candidate">Candidate</a></li>
         <li><a href="#polling-place">Polling Place</a></li>
@@ -28,8 +31,10 @@
           <section>
             <h1>Pop by the Polls</h1>
             <p>
-              This is an assignment to talk about the information for voter
-              registration
+              This website is made intended to give more information on Jill
+              Stein, a potential presidential candidate, the stances that she
+              takes on several issues and where to vote in North Carolina along
+              with a sample ballot.
             </p>
             <a href="#" title="Read about the issues">Read More</a>
           </section>
@@ -46,36 +51,56 @@
           <section class="grid-1-4">
             <!--first issue-->
             <article class="card">
-              <figure><img src="./images/issue.jpg" alt="Issue One" /></figure>
+              <figure>
+                <img src="./images/environmentalism.png" alt="Issue One" />
+              </figure>
               <section>
-                <h3>Issue One</h3>
-                <p>Lorem ipsum dolor sit amet</p>
+                <h3>Environmentalism</h3>
+                <p>
+                  Stein believes that we need a national comprehensive water
+                  plan, believing that "clean water is a human right."
+                </p>
               </section>
             </article>
             <!--second issue-->
             <article class="card">
-              <figure><img src="./images/issue.jpg" alt="Issue Two" /></figure>
+              <figure>
+                <img src="./images/Education.jpeg" alt="Issue Two" />
+              </figure>
               <section>
-                <h3>Issue Two</h3>
-                <p>Lorem ipsum dolor sit amet</p>
+                <h3>Education</h3>
+                <p>
+                  Stein has advocated for the abolition of abolishing the large
+                  amount of college debt that plagues many young people coming
+                  right out of university.
+                </p>
               </section>
             </article>
             <!--third issue-->
             <article class="card">
               <figure>
-                <img src="./images/issue.jpg" alt="Issue Three" />
+                <img src="./images/Foreign policy.jpeg" alt="Issue Three" />
               </figure>
               <section>
-                <h3>Issue Three</h3>
-                <p>Lorem ipsum dolor sit amet</p>
+                <h3>Foreign Policy</h3>
+                <p>
+                  There is a refugee crisis that Stein believes is created
+                  mainly by US military interventions and Stein believes we need
+                  to take responsibility by taking in refugees.
+                </p>
               </section>
             </article>
             <!--fourth issue-->
             <article class="card">
-              <figure><img src="./images/issue.jpg" alt="Issue Four" /></figure>
+              <figure>
+                <img src="./images/Health Care.jpeg" alt="Issue Four" />
+              </figure>
               <section>
-                <h3>Issue Four</h3>
-                <p>Lorem ipsum dolor sit amet</p>
+                <h3>Health Care</h3>
+                <p>
+                  Steing stands for a Medicare-for-all system largely due to the
+                  fact that healthcare costs are spent on wasteful practices.
+                </p>
               </section>
             </article>
           </section>
@@ -83,22 +108,30 @@
         <!--candidate section-->
         <section id="candidate">
           <header>
-            <h2>Candidate</h2>
-            <p>the person running</p>
+            <h2>Presidential Candidate 2020</h2>
+            <p>
+              Jill Stein is the presidential candidate for the Green Party in
+              the 2020 election.
+            </p>
           </header>
           <section>
             <!--candidate card-->
             <article class="card grid-1-2">
               <figure>
-                <img src="./images/candidate.jpg" alt="Candidate" />
+                <img src="./images/Jill stein.jpg" alt="Candidate" />
               </figure>
               <section>
-                <h3>Name of Candidate</h3>
+                <h3>Jill Stein</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Nulla aspernatur officiis tenetur autem excepturi dicta eius,
-                  et illo hic, ex laudantium impedit rem? Quibusdam ipsum eos
-                  accusamus ex quasi amet.
+                  Jill Stein was also the Green Party Presidential candidate in
+                  2012 and has taken part in the victories of campaign finance
+                  reform, racially-just redistricting, green jobs, and the
+                  cleanup of incinerators, coal plants, and toxic threats. She
+                  was also a main organizer for the Global Climate Convergence
+                  for People, Planet and Peace over Profit. She has many stances
+                  relating to environmentalism and a cleaner planet due to her
+                  exposure and vast knowledge on the links between toxic
+                  exposures and illnesses that she became aware of in 1990.
                 </p>
               </section>
             </article>
@@ -107,22 +140,26 @@
         <!--polling place section-->
         <section id="polling-place">
           <header>
-            <h2>Polling Place</h2>
-            <p>the location</p>
+            <h2>A Place to Vote in Chapel Hill</h2>
+            <p>
+              This is one of the better known places to vote Chapel Hill, N.C.
+            </p>
           </header>
           <section>
             <!--polling place card-->
             <article class="card grid-1-2">
               <figure>
-                <img src="./images/polling-place.jpg" alt="Polling Location" />
+                <img src="./images/polling place.png" alt="Polling Location" />
               </figure>
               <section>
-                <h3>Name of Polling Place</h3>
+                <h3>The Chapel of the Cross</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore aut corporis ipsam, explicabo veniam nobis perspiciatis
-                  libero laborum! Adipisci excepturi laboriosam rerum eos, quis
-                  minima deserunt asperiores! Placeat, itaque cupiditate.
+                  One of the better known polling places to vote in Chapel Hil
+                  would be The Chapel of the Cross. A more visual representation
+                  of its location is pictured to the left, but the voting
+                  process has changed tremendously due to the COVID-19 pandemic.
+                  Voting can now be done through maiing ballots or in-person
+                  voting.
                 </p>
               </section>
             </article>
@@ -132,21 +169,23 @@
         <section id="sample-ballet">
           <header>
             <h2>Sample Ballot</h2>
-            <p>document that potential voters can use</p>
+            <p>
+              The is a document that a potential voter would see upon election
+              day.
+            </p>
           </header>
           <section>
             <!--sample ballot card-->
             <article class="card grid-1-2">
               <figure>
-                <img src="./images/sample-ballot.jpg" alt="Sample Ballot" />
+                <img src="./images/Sample Ballot.png" alt="Sample Ballot" />
               </figure>
               <section>
-                <h3>Name of Sample Ballot</h3>
+                <h3>North Carolina Sample Ballot</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus optio distinctio consectetur veritatis autem, aut
-                  ipsam similique nostrum quis voluptatibus dolore repellat
-                  ratione officiis non, cum odit repudiandae culpa. Amet.
+                  The picture to the left is of a sample ballot that one would
+                  see if they were registered to vote in Orange County, N.C.
+                  Pictured is only the front of the ballot.
                 </p>
               </section>
             </article>
