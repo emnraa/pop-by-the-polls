@@ -5,13 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pop by the Polls</title>
     <!-- link to style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- link to script.js - make sure to defer -->
   </head>
   <body>
     <!-- nav element goes here -->
+    <nav>
+      <a href="./index.html"><img src="./images/logo.jpg" alt="Logo" /></a>
+      <ul>
+        <li><a href="#issues">Issues</a></li>
+        <li><a href="#candidate">Candidate</a></li>
+        <li><a href="#polling-place">Polling Place</a></li>
+        <li><a href="#sample-ballet">Sample Ballet</a></li>
+      </ul>
+    </nav>
 
     <!-- main element goes here -->
-
+    <main>
+      <article>
+        <!--header of article goes here-->
+        <header class="grid-1-2">
+          <section>
+            <h1>Pop by the Polls</h1>
+            <p>
+              This is an assignment to talk about the information for voter
+              registration
+            </p>
+            <a href="#" title="Read about the issues">Read More</a>
+          </section>
+          <figure>
+            <img src="./images/north-carolina.svg" alt="North Carolina" />
+          </figure>
+        </header>
+        <!--issues section-->
+        <section id="issues">
+          <header>
+            <h2>Issues</h2>
+            <p>issues being discussed</p>
+          </header>
+          <section class="grid-1-4">
+            <!--first issue-->
+            <article class="card">
+              <figure><img src="./images/issue.jpg" alt="Issue One" /></figure>
+              <section>
+                <h3>Issue One</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+              </section>
+            </article>
+            <!--second issue-->
+            <article class="card">
+              <figure><img src="./images/issue.jpg" alt="Issue Two" /></figure>
+              <section>
+                <h3>Issue Two</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+              </section>
+            </article>
+            <!--third issue-->
+            <article class="card">
+              <figure>
+                <img src="./images/issue.jpg" alt="Issue Three" />
+              </figure>
+              <section>
+                <h3>Issue Three</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+              </section>
+            </article>
+            <!--fourth issue-->
+            <article class="card">
+              <figure><img src="./images/issue.jpg" alt="Issue Four" /></figure>
+              <section>
+                <h3>Issue Four</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+              </section>
+            </article>
+          </section>
+        </section>
+        <!--candidate section-->
+        <section id="candidate">
+          <header>
+            <h2>Candidate</h2>
+            <p>the person running</p>
+          </header>
+          <section>
+            <!--candidate card-->
+            <article class="card grid-1-2">
+              <figure>
+                <img src="./images/candidate.jpg" alt="Candidate" />
+              </figure>
+              <section>
+                <h3>Name of Candidate</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Nulla aspernatur officiis tenetur autem excepturi dicta eius,
+                  et illo hic, ex laudantium impedit rem? Quibusdam ipsum eos
+                  accusamus ex quasi amet.
+                </p>
+              </section>
+            </article>
+          </section>
+        </section>
+        <!--polling place section-->
+        <section id="polling-place">
+          <header>
+            <h2>Polling Place</h2>
+            <p>the location</p>
+          </header>
+          <section>
+            <!--polling place card-->
+            <article class="card grid-1-2">
+              <figure>
+                <img src="./images/polling-place.jpg" alt="Polling Location" />
+              </figure>
+              <section>
+                <h3>Name of Polling Place</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore aut corporis ipsam, explicabo veniam nobis perspiciatis
+                  libero laborum! Adipisci excepturi laboriosam rerum eos, quis
+                  minima deserunt asperiores! Placeat, itaque cupiditate.
+                </p>
+              </section>
+            </article>
+          </section>
+        </section>
+        <!--sample ballot section-->
+        <section id="sample-ballet">
+          <header>
+            <h2>Sample Ballot</h2>
+            <p>document that potential voters can use</p>
+          </header>
+          <section>
+            <!--sample ballot card-->
+            <article class="card grid-1-2">
+              <figure>
+                <img src="./images/sample-ballot.jpg" alt="Sample Ballot" />
+              </figure>
+              <section>
+                <h3>Name of Sample Ballot</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus optio distinctio consectetur veritatis autem, aut
+                  ipsam similique nostrum quis voluptatibus dolore repellat
+                  ratione officiis non, cum odit repudiandae culpa. Amet.
+                </p>
+              </section>
+            </article>
+          </section>
+        </section>
+      </article>
+    </main>
     <!-- footer element goes here -->
+    <footer>
+      <p>
+        This website was made by
+        <a href="/">Emily Rattanavong</a>
+        in
+        <a href="https://mejo187.com">Foundations of Interactive Media</a>
+        at
+        <a href="https://unc.edu"
+          >The University of North Carolina at Chapel Hill</a
+        >.
+      </p>
+    </footer>
   </body>
 </html>
